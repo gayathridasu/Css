@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <style>
+        *{
+          background-color:bisque;
+          cursor: pointer;
+        }
+        div{
+          height:300px;
+          width: 300px;
+          padding: 20px;
+        }
+        .item1,.item2,.item3,.item4{
+          background-color: grey;
+        }
+              .item1:hover ~ div{
+                transform: rotateX(180deg);
+              }
+              .item2:hover ~ div{
+                transform: skewX(20deg);
+              }
+             .item3:hover ~ div{
+                transform: scaleX(1.5);
+             }
+             .item4:hover ~ div{
+              transform: translateX(200px);
+             }
+      </style>
+  </head>
+  <body>
+     <center>
+      <button class="item1">rotate</button>
+      <button class="item2">skew</button>
+      <button class="item3">scale</button>
+      <button class="item4">translate</button>
+      <br>
+
+    <div class="img"> 
+    <img src="https://cdn.pixabay.com/photo/2022/08/26/11/33/rose-7412336_640.jpg" width="300" height="300" alt=""></div>
+    </center>
+</body>
+</html>
